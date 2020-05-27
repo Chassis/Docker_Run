@@ -1,0 +1,3 @@
+[submodule "modules/docker"]
+	path = modules/docker
+	url = https://github.com/puppetlabs/puppetlabs-docker.git
