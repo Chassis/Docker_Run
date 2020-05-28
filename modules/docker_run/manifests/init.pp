@@ -11,7 +11,7 @@ class docker_run(
   if ( ! empty( $config[disabled_extensions] ) and 'chassis/docker_run' in $config[disabled_extensions] ) {
     # Kill running containers and remove docker.
     $containers.each |String $container, Hash $settings| {
-      docker:run { $container:
+      docker::run { $container:
         ensure => 'absent'
       }
     }
